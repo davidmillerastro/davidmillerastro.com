@@ -59,12 +59,12 @@ a {
 }
 
 .nav {
-  min-height: 78px;
+  min-height: 82px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 36px;
 }
 
 .nav a {
@@ -73,14 +73,14 @@ a {
 
 .site-name {
   color: var(--text);
-  font-size: 1.14rem;
+  font-size: 1.22rem;
   font-weight: 800;
   letter-spacing: -0.015em;
 }
 
 .nav-link {
   color: var(--muted);
-  font-size: 1.06rem;
+  font-size: 1.13rem;
   font-weight: 650;
   transition: color 160ms ease;
 }
@@ -157,7 +157,7 @@ a {
 .hero-title {
   margin: 0 0 20px;
   color: var(--text);
-  font-size: 1.65rem;
+  font-size: clamp(1.7rem, 2.6vw, 2.05rem);
   font-weight: 760;
   line-height: 1.2;
   letter-spacing: -0.025em;
@@ -199,13 +199,14 @@ a {
 }
 
 .button {
-  min-height: 46px;
-  padding: 0 19px;
+  min-height: 49px;
+  padding: 0 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
   border-radius: 6px;
+  font-size: 1.05rem;
   font-weight: 700;
   text-decoration: none;
   transition:
@@ -230,8 +231,19 @@ a {
 
 /* ---------- Email ---------- */
 
+.email-line {
+  margin: 19px 0 0;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.email-line span {
+  font-weight: 500;
+}
+
 .email-line a {
   color: var(--accent);
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -317,10 +329,11 @@ a {
   .site-name {
     width: 100%;
     text-align: center;
+    font-size: 1.16rem;
   }
 
   .nav-link {
-    font-size: 0.98rem;
+    font-size: 1.02rem;
   }
 
   .hero {
@@ -353,10 +366,11 @@ a {
 
   .button {
     width: 100%;
+    font-size: 1.03rem;
   }
 
   .email-line {
-    font-size: 1rem;
+    font-size: 1.04rem;
   }
 
   .latest-news {
