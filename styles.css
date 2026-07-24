@@ -164,66 +164,25 @@ a {
 }
 
 .bio {
-  max-width: 690px;
+  max-width: 720px;
   color: var(--muted);
-  font-size: 1.07rem;
+  font-size: 1.05rem;
 }
 
 .bio p {
-  margin: 0 0 17px;
+  margin: 0 0 18px;
 }
 
-
-/* ---------- wdifmr.org feature ---------- */
-
-.research-site {
-  max-width: 690px;
-  margin-top: 28px;
-  padding: 17px 19px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 26px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--accent);
-}
-
-.research-site-description {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-
-.research-site-description strong {
+.bio strong {
   color: var(--text);
-  font-size: 1rem;
-}
-
-.research-site-description span {
-  color: var(--muted);
-  font-size: 0.93rem;
-}
-
-.research-site-link {
-  flex: 0 0 auto;
-  color: var(--accent);
-  font-size: 0.97rem;
-  font-weight: 750;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.research-site-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  font-weight: 700;
 }
 
 
 /* ---------- Buttons and profile links ---------- */
 
 .primary-links {
-  margin-top: 27px;
+  margin-top: 28px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -385,12 +344,6 @@ a {
 
   .hero-title {
     font-size: 1.75rem;
-  }
-
-  .research-site {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
   }
 
   .primary-links {
