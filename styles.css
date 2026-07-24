@@ -178,8 +178,18 @@ a {
   font-weight: 700;
 }
 
+.inline-link {
+  color: var(--accent);
+  font-weight: 650;
+  text-underline-offset: 3px;
+}
 
-/* ---------- Buttons and profile links ---------- */
+.inline-link:hover {
+  color: var(--accent-dark);
+}
+
+
+/* ---------- Primary links ---------- */
 
 .primary-links {
   margin-top: 28px;
@@ -217,28 +227,28 @@ a {
   background: var(--accent-dark);
 }
 
-.button-secondary {
-  background: var(--surface);
+
+/* ---------- Email ---------- */
+
+.email-line {
+  margin: 18px 0 0;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.email-line span {
+  font-weight: 500;
+}
+
+.email-line a {
   color: var(--accent);
-  border-color: var(--border);
+  text-decoration: none;
 }
 
-.button-secondary:hover {
-  border-color: var(--accent);
-}
-
-.social-links {
-  margin-top: 21px;
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  color: var(--muted);
-  font-size: 0.98rem;
-}
-
-.social-links a {
-  color: var(--accent);
-  text-underline-offset: 4px;
+.email-line a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 
@@ -353,6 +363,10 @@ a {
 
   .button {
     width: 100%;
+  }
+
+  .email-line {
+    font-size: 1rem;
   }
 
   .latest-news {
