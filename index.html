@@ -2,52 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal academic website of David Miller, astronomer and white dwarf researcher.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Personal academic website of David Miller, astronomer and white dwarf researcher."
+  >
+
   <title>David Miller | Astronomer</title>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
-      <a class="site-name" href="index.html">David Miller</a>
 
-      <div class="nav-links">
-        <a class="active" href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a
-          href="DavidMiller_CV_June2026.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CV
-        </a>
-      </div>
+      <a class="site-name" href="index.html">
+        David Miller
+      </a>
+
+      <a class="nav-link active" href="index.html">
+        Home
+      </a>
+
+      <a class="nav-link" href="research.html">
+        Research
+      </a>
+
+      <a class="nav-link" href="publications.html">
+        Publications
+      </a>
+
+      <a
+        class="nav-link"
+        href="DavidMiller_CV_June2026.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CV
+      </a>
+
+      <a
+        class="nav-link external-nav-link"
+        href="https://wdifmr.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        wdifmr.org ↗
+      </a>
+
     </nav>
   </header>
 
+
   <main>
+
     <section class="hero container">
-      <div class="portrait-wrap">
+
+      <div class="profile-column">
+
         <img
           class="portrait"
           src="assets/david-miller.jpg"
-          alt="Portrait of David Miller"
+          alt=""
+          loading="eager"
+          decoding="async"
         >
-      </div>
 
-      <div class="hero-content">
-        <p class="eyebrow">Astronomer · White Dwarf Researcher</p>
-        <h1>Welcome</h1>
-
-        <div class="bio">
-          <p>TBD — First paragraph of biography.</p>
-          <p>TBD — Second paragraph of biography.</p>
+        <div class="profile-card">
+          <p class="profile-name">David Miller</p>
+          <p class="profile-position">PhD Candidate</p>
+          <p class="profile-institution">
+            University of British Columbia,<br>
+            Department of Physics &amp; Astronomy
+          </p>
         </div>
 
-        <div class="primary-links" aria-label="Primary contact links">
+      </div>
+
+
+      <div class="hero-content">
+
+        <h1 class="hero-title">Welcome</h1>
+
+        <div class="bio">
+          <p>
+            TBD — First paragraph of biography.
+          </p>
+
+          <p>
+            TBD — Second paragraph of biography.
+          </p>
+        </div>
+
+
+        <div class="research-site">
+
+          <div class="research-site-description">
+            <strong>White Dwarf Initial–Final Mass Relation</strong>
+
+            <span>
+              Explore the IFMR database, literature compilation,
+              and analysis tools.
+            </span>
+          </div>
+
+          <a
+            class="research-site-link"
+            href="https://wdifmr.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit wdifmr.org ↗
+          </a>
+
+        </div>
+
+
+        <div
+          class="primary-links"
+          aria-label="Primary contact links"
+        >
+
           <a
             class="button button-primary"
             href="DavidMiller_CV_June2026.pdf"
@@ -63,9 +145,15 @@
           >
             Email: drmiller@phas.ubc.ca
           </a>
+
         </div>
 
-        <div class="social-links" aria-label="Professional profiles">
+
+        <div
+          class="social-links"
+          aria-label="Professional profiles"
+        >
+
           <a
             href="https://www.linkedin.com/in/davermiller/"
             target="_blank"
@@ -83,42 +171,47 @@
           >
             ORCID
           </a>
-        </div>
-      </div>
-    </section>
 
-    <section class="featured-project">
-      <div class="container project-card">
-        <div>
-          <p class="eyebrow">Featured Resource</p>
-          <h2>The White Dwarf Initial–Final Mass Relation</h2>
-
-          <p>
-            Explore the IFMR database, literature compilation, analysis tools,
-            and related resources.
-          </p>
         </div>
 
-        <a
-          class="project-link"
-          href="https://wdifmr.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit wdifmr.org <span aria-hidden="true">↗</span>
-        </a>
       </div>
+
     </section>
+
+
+    <section
+      class="latest-news container"
+      aria-labelledby="latest-news-heading"
+    >
+
+      <h2 id="latest-news-heading">
+        Latest News
+      </h2>
+
+      <div class="news-content">
+        <!-- News items will be added here later. -->
+      </div>
+
+    </section>
+
   </main>
 
+
   <footer class="site-footer">
+
     <div class="container">
-      <p>© <span id="year"></span> David Miller</p>
+      <p>
+        © <span id="year"></span> David Miller
+      </p>
     </div>
+
   </footer>
 
+
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
   </script>
+
 </body>
 </html>
