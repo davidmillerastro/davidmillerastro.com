@@ -8,8 +8,7 @@
   --border: #dfe4ea;
   --accent: #285b8f;
   --accent-dark: #1d466f;
-  --max-width: 1080px;
-  --shadow: 0 18px 50px rgba(25, 42, 62, 0.10);
+  --max-width: 1100px;
 }
 
 * {
@@ -47,140 +46,202 @@ a {
   margin-inline: auto;
 }
 
+
 /* ---------- Header ---------- */
 
 .site-header {
-  background: rgba(247, 248, 250, 0.94);
-  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 10;
+  background: rgba(247, 248, 250, 0.96);
+  border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
 }
 
 .nav {
-  min-height: 72px;
+  min-height: 78px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.nav a {
+  text-decoration: none;
 }
 
 .site-name {
-  font-size: 1.05rem;
-  font-weight: 750;
-  text-decoration: none;
-  letter-spacing: -0.01em;
+  color: var(--text);
+  font-size: 1.14rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.nav-links a {
+.nav-link {
   color: var(--muted);
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-decoration: none;
+  font-size: 1.06rem;
+  font-weight: 650;
   transition: color 160ms ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-link:hover,
+.nav-link.active {
   color: var(--accent);
 }
 
-/* ---------- Home ---------- */
+.external-nav-link {
+  color: var(--accent);
+}
+
+
+/* ---------- Homepage hero ---------- */
 
 .hero {
-  padding: 88px 0 78px;
+  padding: 70px 0 66px;
   display: grid;
-  grid-template-columns: minmax(250px, 360px) minmax(0, 1fr);
-  align-items: center;
-  gap: clamp(42px, 7vw, 88px);
+  grid-template-columns: 250px minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(48px, 7vw, 82px);
 }
 
-.portrait-wrap {
-  position: relative;
-}
-
-.portrait-wrap::before {
-  content: "";
-  position: absolute;
-  inset: 22px -20px -20px 22px;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  z-index: -1;
+.profile-column {
+  width: 250px;
 }
 
 .portrait {
-  width: 100%;
+  width: 250px;
   aspect-ratio: 4 / 5;
   display: block;
   object-fit: cover;
   background: #e9edf2;
-  border-radius: 18px;
-  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
 }
 
-.eyebrow {
-  margin: 0 0 10px;
-  color: var(--accent);
-  font-size: 0.78rem;
+.profile-card {
+  margin-top: 14px;
+  padding: 17px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.profile-card p {
+  margin: 0;
+}
+
+.profile-name {
+  color: var(--text);
+  font-size: 1.25rem;
   font-weight: 800;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
+  line-height: 1.25;
 }
 
-h1,
-h2 {
-  line-height: 1.12;
-  letter-spacing: -0.035em;
+.profile-position {
+  margin-top: 4px !important;
+  color: var(--accent);
+  font-size: 0.98rem;
+  font-weight: 700;
 }
 
-h1 {
-  margin: 0 0 24px;
-  font-size: clamp(2.8rem, 7vw, 5.2rem);
-  font-weight: 780;
+.profile-institution {
+  margin-top: 9px !important;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
 }
 
-h2 {
-  margin: 0 0 14px;
-  font-size: clamp(1.7rem, 4vw, 2.5rem);
+.hero-content {
+  padding-top: 2px;
+}
+
+.hero-title {
+  margin: 0 0 20px;
+  color: var(--text);
+  font-size: clamp(1.7rem, 2.6vw, 2.05rem);
+  font-weight: 760;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
 }
 
 .bio {
-  max-width: 680px;
+  max-width: 690px;
   color: var(--muted);
-  font-size: 1.06rem;
+  font-size: 1.07rem;
 }
 
 .bio p {
-  margin: 0 0 16px;
+  margin: 0 0 17px;
 }
 
+
+/* ---------- wdifmr.org feature ---------- */
+
+.research-site {
+  max-width: 690px;
+  margin-top: 28px;
+  padding: 17px 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+}
+
+.research-site-description {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.research-site-description strong {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.research-site-description span {
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+.research-site-link {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font-size: 0.97rem;
+  font-weight: 750;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.research-site-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+/* ---------- Buttons and profile links ---------- */
+
 .primary-links {
+  margin-top: 27px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 30px;
 }
 
 .button {
   min-height: 46px;
+  padding: 0 19px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0 19px;
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 6px;
   font-weight: 700;
   text-decoration: none;
   transition:
     transform 160ms ease,
-    background 160ms ease,
+    background-color 160ms ease,
     border-color 160ms ease;
 }
 
@@ -199,54 +260,49 @@ h2 {
 
 .button-secondary {
   background: var(--surface);
+  color: var(--accent);
   border-color: var(--border);
 }
 
 .button-secondary:hover {
-  border-color: #b9c3ce;
+  border-color: var(--accent);
 }
 
 .social-links {
-  margin-top: 22px;
+  margin-top: 21px;
   display: flex;
+  align-items: center;
   gap: 11px;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.98rem;
 }
 
 .social-links a {
+  color: var(--accent);
   text-underline-offset: 4px;
 }
 
-.featured-project {
-  padding: 0 0 84px;
+
+/* ---------- Latest news ---------- */
+
+.latest-news {
+  padding: 0 0 82px;
 }
 
-.project-card {
-  padding: clamp(28px, 5vw, 48px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 42px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  box-shadow: 0 12px 35px rgba(25, 42, 62, 0.06);
-}
-
-.project-card p:not(.eyebrow) {
-  max-width: 690px;
-  margin: 0;
-  color: var(--muted);
-}
-
-.project-link {
-  flex: 0 0 auto;
-  color: var(--accent);
+.latest-news h2 {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: 1.65rem;
   font-weight: 750;
-  text-decoration: none;
-  white-space: nowrap;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
 }
+
+.news-content {
+  min-height: 110px;
+  border-top: 1px solid var(--border);
+}
+
 
 /* ---------- Interior pages ---------- */
 
@@ -256,7 +312,10 @@ h2 {
 }
 
 .page-main h1 {
+  margin: 0 0 24px;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
 }
 
 .page-intro {
@@ -266,11 +325,12 @@ h2 {
   font-size: 1.1rem;
 }
 
+
 /* ---------- Footer ---------- */
 
 .site-footer {
   margin-top: auto;
-  padding: 28px 0;
+  padding: 27px 0;
   color: var(--muted);
   border-top: 1px solid var(--border);
   font-size: 0.9rem;
@@ -280,41 +340,70 @@ h2 {
   margin: 0;
 }
 
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 760px) {
+
+  .container {
+    width: min(calc(100% - 28px), var(--max-width));
+  }
+
   .nav {
     min-height: auto;
     padding: 18px 0;
+    gap: 13px 22px;
+  }
+
+  .site-name {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 0.98rem;
+  }
+
+  .hero {
+    padding: 48px 0 58px;
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .profile-column {
+    width: min(100%, 250px);
+    margin-inline: auto;
+  }
+
+  .portrait {
+    width: 100%;
+  }
+
+  .hero-content {
+    padding-top: 0;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .research-site {
     align-items: flex-start;
     flex-direction: column;
     gap: 12px;
   }
 
-  .nav-links {
-    width: 100%;
-    gap: 18px;
-    overflow-x: auto;
-    padding-bottom: 3px;
-  }
-
-  .hero {
-    padding-top: 52px;
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
-
-  .portrait-wrap {
-    width: min(82%, 380px);
-  }
-
-  h1 {
-    font-size: clamp(2.6rem, 15vw, 4.2rem);
-  }
-
-  .project-card {
-    align-items: flex-start;
+  .primary-links {
+    align-items: stretch;
     flex-direction: column;
-    gap: 24px;
   }
+
+  .button {
+    width: 100%;
+  }
+
+  .latest-news {
+    padding-bottom: 60px;
+  }
+
 }
