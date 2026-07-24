@@ -7,10 +7,12 @@
   <title>CV | David Miller</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
       <a class="site-name" href="index.html">David Miller</a>
+
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
@@ -20,16 +22,43 @@
     </nav>
   </header>
 
-  <main class="page-main container">
-    <p class="eyebrow">Curriculum Vitae</p>
-    <h1>CV</h1>
-    <p class="page-intro">A full web version can be added here later.</p>
-    <a class="button button-primary" href="assets/CV_june2026.pdf">Download CV (PDF)</a>
+  <main class="cv-main container">
+    <div class="cv-heading">
+      <div>
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1>CV</h1>
+      </div>
+
+      <a
+        class="button button-primary"
+        href="assets/CV_june2026.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open PDF
+      </a>
+    </div>
+
+    <iframe
+      class="cv-viewer"
+      src="assets/CV_june2026.pdf"
+      title="David Miller curriculum vitae"
+    >
+      <p>
+        Your browser cannot display the PDF.
+        <a href="assets/CV_june2026.pdf">Open the CV here.</a>
+      </p>
+    </iframe>
   </main>
 
   <footer class="site-footer">
-    <div class="container"><p>© <span id="year"></span> David Miller</p></div>
+    <div class="container">
+      <p>© <span id="year"></span> David Miller</p>
+    </div>
   </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
