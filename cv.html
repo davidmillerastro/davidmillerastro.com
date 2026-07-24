@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curriculum vitae of David Miller.">
+  <title>CV | David Miller</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="site-name" href="index.html">David Miller</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a class="active" href="cv.html">CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main container">
+    <p class="eyebrow">Curriculum Vitae</p>
+    <h1>CV</h1>
+    <p class="page-intro">A full web version can be added here later.</p>
+    <a class="button button-primary" href="assets/David_Miller_CV.pdf">Download CV (PDF)</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© <span id="year"></span> David Miller</p></div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
