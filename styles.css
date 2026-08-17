@@ -444,8 +444,8 @@ a {
 /* Research figure */
 
 .research-figure {
-  width: 100%;
-  margin: 0 0 28px;
+  width: min(100%, 520px);
+  margin: 0 auto 28px;
 }
 
 .research-figure img {
@@ -459,8 +459,8 @@ a {
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.4;
+  text-align: left;
 }
-
 
 /* Research description */
 
@@ -589,11 +589,6 @@ a {
 
   .research-pubs {
     margin-bottom: 22px;
-  }
-
-  .research-figure {
-    width: 100%;
-    margin-bottom: 24px;
   }
 
   .research-content p {
