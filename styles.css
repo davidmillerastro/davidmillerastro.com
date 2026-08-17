@@ -328,12 +328,13 @@ a {
   width: 100%;
 }
 
+
 /* Top research introduction */
 
 .research-intro {
   max-width: 900px;
   margin: 0 auto 60px;
-  padding: 34px 40px;
+  padding: 28px 38px 30px;
   background: #edf3f9;
   border: 1px solid #d5e1ed;
   border-left: 6px solid var(--accent);
@@ -341,19 +342,18 @@ a {
 }
 
 .research-intro h1 {
-  margin: 0 0 16px;
+  margin: 0 0 12px;
   color: var(--text);
-  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-size: clamp(2.7rem, 5vw, 3.8rem);
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.035em;
 }
 
 .research-intro p {
-  max-width: 800px;
   margin: 0;
   color: var(--muted);
-  font-size: 1.12rem;
+  font-size: 1.1rem;
   line-height: 1.7;
 }
 
@@ -370,40 +370,33 @@ a {
 /* Individual research projects */
 
 .research-item {
-  display: grid;
-  grid-template-columns: minmax(300px, 430px) minmax(0, 1fr);
-  gap: clamp(38px, 5vw, 62px);
-  align-items: start;
+  display: flow-root;
   margin-bottom: 76px;
 }
 
 .research-figure {
-  margin: 0;
+  width: 390px;
+  margin: 0 44px 20px 0;
+  float: left;
 }
 
 .research-figure img {
   width: 100%;
   height: auto;
   display: block;
-  background: var(--surface);
-  border: 1px solid var(--border);
 }
 
 .research-credit {
-  margin-top: 8px;
+  margin-top: 7px;
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.4;
 }
 
-.research-content {
-  min-width: 0;
-}
-
 .research-content h2 {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   color: var(--text);
-  font-size: clamp(1.55rem, 2.5vw, 2rem);
+  font-size: clamp(1.55rem, 2.4vw, 1.9rem);
   font-weight: 780;
   line-height: 1.2;
   letter-spacing: -0.025em;
@@ -430,6 +423,41 @@ a {
   color: var(--text);
   font-size: 1.02rem;
   line-height: 1.75;
+}
+
+
+/* ---------- Research responsive ---------- */
+
+@media (max-width: 760px) {
+
+  .research-intro {
+    margin-bottom: 44px;
+    padding: 25px 24px 27px;
+    border-left-width: 5px;
+  }
+
+  .research-intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .research-intro p {
+    font-size: 1.04rem;
+  }
+
+  .research-figure {
+    width: 100%;
+    max-width: 430px;
+    float: none;
+    margin: 0 auto 28px;
+  }
+
+  .research-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .research-content p {
+    font-size: 1rem;
+  }
 }
 
 
