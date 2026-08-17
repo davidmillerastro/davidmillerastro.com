@@ -342,16 +342,6 @@ a {
 
 /* ---------- Research page ---------- */
 
-/*
-  The Research page uses:
-    research-band
-      -> container
-          -> research-intro
-
-    research-section
-      -> research-item
-*/
-
 .research-band {
   padding: 58px 0 54px;
 }
@@ -406,10 +396,11 @@ a {
 }
 
 
-/* Project title */
+/* Project content */
 
 .research-content {
   width: 100%;
+  display: flow-root;
 }
 
 .research-content h2 {
@@ -425,7 +416,7 @@ a {
 /* Publications */
 
 .research-pubs {
-  margin: 0 0 26px;
+  margin: 0 0 24px;
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.55;
@@ -443,9 +434,16 @@ a {
 
 /* Research figure */
 
+/*
+  Supporting figure on desktop:
+  approximately one-third of the text column, capped at 320 px.
+  The description flows alongside and then beneath it.
+*/
+
 .research-figure {
-  width: min(100%, 520px);
-  margin: 0 auto 28px;
+  width: min(34%, 320px);
+  float: left;
+  margin: 4px 30px 16px 0;
 }
 
 .research-figure img {
@@ -457,10 +455,11 @@ a {
 .research-credit {
   margin-top: 7px;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   line-height: 1.4;
   text-align: left;
 }
+
 
 /* Research description */
 
@@ -589,6 +588,17 @@ a {
 
   .research-pubs {
     margin-bottom: 22px;
+  }
+
+  /*
+    On phones the figure leaves the text flow and becomes a
+    small centered image above the description.
+  */
+
+  .research-figure {
+    width: min(100%, 320px);
+    float: none;
+    margin: 0 auto 24px;
   }
 
   .research-content p {
