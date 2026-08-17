@@ -322,6 +322,117 @@ a {
 }
 
 
+/* ---------- Research page ---------- */
+
+.research-section {
+  width: 100%;
+}
+
+/* Top research introduction */
+
+.research-intro {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 34px 40px;
+  background: #edf3f9;
+  border: 1px solid #d5e1ed;
+  border-left: 6px solid var(--accent);
+  border-radius: 8px;
+}
+
+.research-intro h1 {
+  margin: 0 0 16px;
+  color: var(--text);
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.research-intro p {
+  max-width: 800px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.research-intro a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+.research-intro a:hover {
+  color: var(--accent-dark);
+}
+
+
+/* Individual research projects */
+
+.research-item {
+  display: grid;
+  grid-template-columns: minmax(300px, 430px) minmax(0, 1fr);
+  gap: clamp(38px, 5vw, 62px);
+  align-items: start;
+  margin-bottom: 76px;
+}
+
+.research-figure {
+  margin: 0;
+}
+
+.research-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.research-credit {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.research-content {
+  min-width: 0;
+}
+
+.research-content h2 {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
+  font-weight: 780;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.research-pubs {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.research-pubs a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+.research-pubs a:hover {
+  color: var(--accent-dark);
+}
+
+.research-content p {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+
 /* ---------- Footer ---------- */
 
 .site-footer {
@@ -402,4 +513,35 @@ a {
     padding-bottom: 60px;
   }
 
+  .research-intro {
+    margin-bottom: 46px;
+    padding: 28px 25px;
+    border-left-width: 5px;
+  }
+
+  .research-intro h1 {
+    font-size: 2.6rem;
+  }
+
+  .research-intro p {
+    font-size: 1.05rem;
+  }
+
+  .research-item {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 58px;
+  }
+
+  .research-figure {
+    width: 100%;
+  }
+
+  .research-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .research-content p {
+    font-size: 1rem;
+  }
 }
