@@ -383,12 +383,12 @@ a {
 .research-section {
   width: min(calc(100% - 40px), var(--research-width));
   margin-inline: auto;
-  padding: 60px 0 84px;
+  padding: 28px 0 32px;
 }
 
 .research-item {
   width: 100%;
-  margin: 0 0 84px;
+  margin: 0;
 }
 
 .research-item:last-child {
