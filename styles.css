@@ -119,17 +119,17 @@ a {
 .hero {
   padding: 68px 0 66px;
   display: grid;
-  grid-template-columns: 250px minmax(0, 1fr);
+  grid-template-columns: 190px minmax(0, 1fr);
   align-items: start;
   gap: clamp(48px, 7vw, 82px);
 }
 
 .profile-column {
-  width: 250px;
+  width: 190px;
 }
 
 .portrait {
-  width: 150px;
+  width: 190px;
   aspect-ratio: 4 / 5;
   display: block;
   object-fit: cover;
@@ -139,7 +139,7 @@ a {
 
 .profile-card {
   margin-top: 14px;
-  padding: 17px 18px;
+  padding: 15px 14px;
   background: var(--surface);
   border: 1px solid var(--border);
 }
@@ -520,7 +520,7 @@ a {
   }
 
   .profile-column {
-    width: min(100%, 250px);
+    width: min(100%, 190px);
     margin-inline: auto;
   }
 
