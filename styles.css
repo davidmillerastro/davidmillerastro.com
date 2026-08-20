@@ -126,6 +126,7 @@ a {
 
 .profile-column {
   width: 220px;
+  align-self: center;
 }
 
 .portrait {
@@ -524,6 +525,7 @@ a {
   .profile-column {
     width: min(100%, 220px);
     margin-inline: auto;
+    align-self: start;
   }
 
   .portrait {
