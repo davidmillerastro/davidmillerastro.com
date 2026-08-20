@@ -129,7 +129,7 @@ a {
 }
 
 .portrait {
-  width: 250px;
+  width: 150px;
   aspect-ratio: 4 / 5;
   display: block;
   object-fit: cover;
